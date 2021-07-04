@@ -1,0 +1,18 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  api_token:
+    description: 'Your Snap account API token'
+    required: true
+outputs:
+  branch_name:
+    description: 'The branch name'
+  branch_type:
+    description: 'The type of branch (task, effort or project)'
+  ignored:
+    description: 'If the branch should be ignored'
+  task_id:
+    description: 'The ID of the task to which this branch is associated'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
